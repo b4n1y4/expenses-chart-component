@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expenses chart component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-top">
+          <div class="text-container">
+            <p class="text">My balance</p>
+            <p class="balance">$921.48</p>
+          </div>
+          <img src="./images/logo.svg" alt="logo" class="logo" />
+        </div>
+        <div class="card-bottom">
+          <h1 class="heading color-dark">Spending - Last 7 days</h1>
+          <div id="bars-container"></div>
+          <script src="./script.js"></script>
+          <hr class="color-light" />
+          <div class="bottom-footer">
+            <div class="text-left">
+              <p class="total txt color-light">Total this month</p>
+              <p class="total-value color-dark">$478.33</p>
+            </div>
+            <div class="text-right">
+              <p class="percent-value color-dark">+2.4%</p>
+              <p class="txt color-light">from last month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
