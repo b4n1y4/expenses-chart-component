@@ -68,7 +68,7 @@ hr {
   margin: 1.5rem 0;
   outline: none;
   border: none;
-  /* background-color: hsl(28, 10%, 53%); */
+  background-color: hsla(28, 10%, 53%, 0.2);
   border: 2px solid hsla(28, 10%, 53%, 0.2);
 }
 
