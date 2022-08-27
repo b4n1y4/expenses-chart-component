@@ -45,11 +45,6 @@ data.forEach((day) => {
   bar.classList.add("bar");
   bar.style.height = `${day.amount * 2}px`;
 
-  // setTimeout(() => {
-  //   if (day.amount === max) {
-  //     bar.classList.add("max-amount");
-  //   }
-  // }, 1000);
   if (day.amount === max) {
     bar.classList.add("max-amount");
   }
@@ -60,5 +55,25 @@ data.forEach((day) => {
   dayText.innerText = day.day;
   container.appendChild(dayText);
 
+  const amount = document.createElement("span");
+  amount.classList.add("active-text");
+  amount.innerText = `$${day.amount}`;
+  bar.appendChild(amount);
+
   ele.appendChild(container);
 });
+
+if (document.getElementsByClassName("bar").length > 0) {
+  console.log(document.getElementsByClassName("bar").length);
+  const arr = Array.from(document.getElementsByClassName("bar"));
+  arr.forEach((bar) => {
+    bar.addEventListener("mouseover", () => {
+      bar.classList.add("active");
+    });
+    arr.forEach((bar) => {
+      bar.addEventListener("mouseout", () => {
+        bar.classList.remove("active");
+      });
+    });
+  });
+}
