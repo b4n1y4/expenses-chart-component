@@ -145,8 +145,8 @@ hr {
   font-weight: 700;
   padding: 0.25rem;
   position: absolute;
-  left: -20%;
+  left: -22.5%;
   top: -1.75rem;
   border-radius: 5px;
-  opacity: 1;
+  z-index: 1;
 }
